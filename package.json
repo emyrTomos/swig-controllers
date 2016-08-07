@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/emyrTomos/swig-controllers#readme",
   "dependencies": {
-    "crochet": "file:///home/emyr/bindings-project",
+    "crochet-ui-bindings": "file:///home/emyr/bindings-project",
     "express": "^4.14.0",
     "grunt": "^1.0.1",
     "swig": "^1.4.2"

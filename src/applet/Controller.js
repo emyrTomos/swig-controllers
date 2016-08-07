@@ -3,11 +3,11 @@
  */
 var crochet = require('crochet');
 
-function Controller(model , view){
-  var binder = new crochet.Binder();
+function Controller(_model , _view){
+  var binder = new crochet.createBinder(_model , _view);
   var model = _model;
   var view = _view;
-  console.log(model , view , label , crochet.getCrochetAttributes(view.getElement()) , crochet.getCrochetElements(label.getElement()));
+  //console.log("controller" , model , view , binder , this);
 }
 
 module.exports = Controller;

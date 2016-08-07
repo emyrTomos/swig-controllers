@@ -6,7 +6,9 @@ function Model(_object){
   this.name = _object.name;
   this.description = _object.description;
   this.color = _object.color;
-  this.colors = ['orange','red','green'];
+  this.something = _object.something;
+  this.colors = _object.colors;
+  this.availableColors = _object.availableColors;
   this.setName = function(name){
     this.name = name;
   };
@@ -27,7 +29,12 @@ function Model(_object){
   this.getColor = function(){
     return this.color;
   };
-
+  this.setSomething = function(something){
+    this.something = something;
+  };
+  this.getSomething = function(){
+    return this.something;
+  };
 }
 
 module.exports = Model;
